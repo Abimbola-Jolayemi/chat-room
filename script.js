@@ -1,5 +1,5 @@
 
-document.getElementById("signInButton").addEventListener("click", function () {
-    window.location.href = "chatroom.html";
-  });
+// document.getElementById("signInButton").addEventListener("click", function () {
+//     window.location.href = "chatroom.html";
+//   });
   
