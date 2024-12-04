@@ -1,0 +1,334 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* display: ; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2a3a3d;
+    color: #ffffff;
+}
+
+/* Icon Styling */
+.icon-container {
+    width: 90%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: 100;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Body with gradient */
+.body {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(53, 79, 89, 0.8), rgba(35, 55, 61, 0.8)), url(images/anon-space.avif);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container Styling */
+.containerBody {
+    width: 90%;
+    max-width: 450px;
+    background: #1f2c2f;
+    border-radius: 25px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Header Styling */
+.header {
+    background-color: #2d3f44;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.header h1 span{
+    color: #76b852;
+}
+
+/* Note Box */
+.noteBox {
+    padding: 20px;
+    width: 90%;
+    margin: 15px auto;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-left: 5px solid #76b852;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Form Box */
+.formBox {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Submit Button Styling */
+.submitButton {
+    background: linear-gradient(135deg, #66bb6a, #76b852);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 12px 35px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    background-color: #66bb6a;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .containerBody {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 1.4rem;
+    }
+
+    .noteBox {
+        font-size: 0.9rem;
+    }
+
+    .submitButton {
+        width: 90%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
+
+
+/* Chatroom styling */
+
+/* Body Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #2a3a3d;
+  color: #ffffff;
+}
+
+/* Icon Styling */
+.icon-container {
+  width: 90%;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 100;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Chatroom Body Styling */
+.chatroom-body {
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(135deg, rgba(53, 79, 89, 0.8), rgba(35, 55, 61, 0.8)), url(images/anon-space.avif);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container Styling */
+.containerBody {
+  width: 90%;
+  max-width: 450px;
+  background: #1f2c2f;
+  border-radius: 25px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Header Styling */
+.header {
+  background-color: #2d3f44;
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.header h1 span {
+  color: #76b852;
+}
+
+/* Chat Box */
+.chatBox {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60vh;
+  overflow-y: auto;
+}
+
+/* Messages Styling */
+.messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background: #2d3f44;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+/* Input Box Styling */
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.messageInput {
+  background: #1f2c2f;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  resize: none;
+  font-size: 1rem;
+}
+
+.sendButton {
+  background: linear-gradient(135deg, #66bb6a, #76b852);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px 35px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s ease;
+}
+
+.sendButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  background-color: #66bb6a;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .containerBody {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 1.4rem;
+  }
+
+  .noteBox {
+    font-size: 0.9rem;
+  }
+
+  .sendButton {
+    width: 90%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+} 
+
+.exit-chat-div{
+    display: flex;
+    width: 30%;
+    height: inherit;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+}
+
+.exit-room{
+    height: 50%;
+    width: 100px;
+    background-color: #76b852;
+    color: #f2f9ff;
+    border: 1px solid #f2f9ff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.exit-room:hover{
+    height: 30px;
+    width: 100px;
+    background-color: #2d3f44;
+    color: #f2f9ff;
+    border: 1px solid #f2f9ff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transform: 1.05;
+}
