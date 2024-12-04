@@ -34,10 +34,9 @@ app.get('/chatroom', (req, res) => {
       };
       console.log(messageData)
       io.emit('chat message', messageData);
-      socket.on('disconnect', () => {
-        console.log(`${socket.id} disconnected`);
-      });
-    
+    });
+    socket.on('disconnect', () => {
+      console.log(`${socket.id} disconnected`);
     });
   });
 
