@@ -136,6 +136,9 @@
       });
 
       socket.on("chat message", function (data) {
+        const now = new Date();
+        const formattedTime = now.toLocaleTimeString();
+
         var item = document.createElement("li");
         let userId = data.id;
         let reduceId = "";
@@ -148,20 +151,15 @@
 
         let = USERID = "ID";
         item.innerHTML = `
-         ${USERID}  <span  style="color: red; font-size: 0.7em;">${reduceId}</span>: ${data.message}
+        <span  style="color:white; font-size: 0.5em;">    ${formattedTime}  <br /></span>
+        ${USERID}  <span  style="color: #76b852; font-size: 0.7em;">${reduceId}  </span>:<span  style="color:white;">  ${data.message}</span> 
     `;
 
         messages.appendChild(item);
         window.scrollTo(0, document.body.scrollHeight);
       });
 
-      //       socket.on('user joined', function (data) {
-      //     var item = document.createElement('li');
-      //     item.style.color = 'green';
-      //     item.textContent = `User joined: ${data.id}`;
-      //     messages.appendChild(item);
-      //     window.scrollTo(0, document.body.scrollHeight);
-      // });
+      
     </script>
   </body>
 </html>
