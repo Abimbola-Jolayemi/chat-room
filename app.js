@@ -41,6 +41,6 @@ app.get('/chatroom', (req, res) => {
   });
 
 
-server.listen(5000, () => {
+server.listen(3000, () => {
   console.log('listening on 3000');
  });
